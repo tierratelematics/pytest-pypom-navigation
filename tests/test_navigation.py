@@ -158,3 +158,12 @@ def test_merge_kwargs(navigation, default_timeout):
 def test_variables(navigation):
     """ Test kwargs """
     assert navigation.variables['foo'] == 'bar'
+
+
+def test_update_variables(navigation):
+    """ Test kwargs """
+    assert navigation.variables['foo'] == 'bar'
+    assert 'new' not in navigation.variables['foo']
+
+    navigation.update_variables({'new': 2})
+    assert navigation.variables['new'] == 2

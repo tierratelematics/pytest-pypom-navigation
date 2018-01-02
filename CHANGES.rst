@@ -4,7 +4,7 @@ Changelog
 2.0.1 (unreleased)
 ==================
 
-- Nothing changed yet.
+- Add ``update_variables`` method on navigation
 
 
 2.0.0 (2018-01-02)
