@@ -49,6 +49,10 @@ class Navigation(object):
         kwargs.update(new_kwargs)
         return kwargs
 
+    def update_variables(self, extra_variables):
+        """ Update variables """
+        self.variables.update(extra_variables)
+
     def visit_page(self, page_id, **kwargs):
         """ Visit page id reference in navigation
             class
